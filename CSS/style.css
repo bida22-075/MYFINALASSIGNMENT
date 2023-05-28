@@ -168,10 +168,6 @@ div.desc {
   color: white;
 }
 
-.topnav a.active {
-  background-color: #2196F3;
-  color: black;
-}
 
 .topnav .search-container {
   float: right;
@@ -213,6 +209,30 @@ div.desc {
     border: 1px solid black;  
   }
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
 
 
 #divsocialmedia img{
